@@ -8,7 +8,6 @@ class Busquedas {
     dbPath = './db/database.json';
 
     constructor() {
-        // TODO: leer BD si existe
         this.leerDB();
 
     }
@@ -34,8 +33,7 @@ class Busquedas {
 
     get paramsOpenweather() {
         return {
-            // 'appid': process.env.OPENWEATHER_KEY,
-            'appid': '8a5a0ffd81cfe49574b9c2115b138493',
+            'appid': process.env.OPENWEATHER_KEY,
             'units': 'metric',
             'lang': 'es'
         }
